@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let timerId; //controls whether the blocks keep falling
   let score = 0
   let lost = false //switch to disable moving the tetromino down when game over occurs
+  let startVar = false
 
   const colors = [
     'orange',
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   //assign functions to KeyCodes
   function control(e) {
-    if (timerId === null) { //no commands executed when the game is not running
+    if (timerId === null && startVar == true) { //no commands executed when the game is not running
       return
     }
     if (lost){
@@ -239,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //add functionality to  start/stop button
   startBtn.addEventListener('click', () => {
+    startVar = true
     if (timerId) {
       clearInterval(timerId)
       timerId = null
