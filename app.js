@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   //assign functions to KeyCodes
   function control(e) {
-    if (timerId === null && startVar == true) { //no commands executed when the game is not running
+    if (timerId === null | startVar === false) { //no commands executed when the game is not running
       return
     }
     if (lost){
