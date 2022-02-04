@@ -18,7 +18,7 @@ body, html {
 h1 {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, +100%);
   font-weight: normal;
 	font-family: 'Ultra', sans-serif;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ h1 {
 #score-header {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, +400%);
+  transform: translate(-50%, +450%);
   font-weight: 700;
 	font-family: 'Ultra', sans-serif;
   text-transform: uppercase;
