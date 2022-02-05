@@ -61,6 +61,16 @@ h1 {
   color: white;
 }
 
+#rotate-arrows {
+  position: absolute;
+  left: 100%;
+  transform: translate(-37%, 1500%);
+  font-weight: normal;
+	font-family: 'Ultra', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .grid {
   width: 200px;
   height: 400px;
